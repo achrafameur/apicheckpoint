@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const User = require("./models/User")
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017', {
+mongoose.connect(process.env.MONGO_URI, {
     dbName: "apicheckpoint",
     useNewUrlParser: true,
     useUnifiedTopology: true,
