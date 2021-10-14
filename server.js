@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require("mongoose");
-const User = require("./models/User")
+const User = require("./models/User");
+
 const app = express();
 
 mongoose.connect(process.env.MONGO_URI, {
